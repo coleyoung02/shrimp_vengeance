@@ -10,11 +10,13 @@ public class WaveLoader : MonoBehaviour
     [SerializeField] private List<Transform> sideSpawns;
     [SerializeField] private List<Transform> topSpawns;
     [SerializeField] private List<Transform> bottomSpawns;
+    [SerializeField] private GameObject firstBossAttack;
 
     private int waveIndex;
     private float clock;
     private bool startWave;
     private bool done;
+    private bool stopUpdate;
 
     private enum PosToInd
     {
@@ -30,6 +32,7 @@ public class WaveLoader : MonoBehaviour
 
     private void Start()
     {
+        stopUpdate = false;
         firstDone = false;
         done = false;
         spInd = new int[3]{ 0, 0, 0 };
@@ -40,9 +43,14 @@ public class WaveLoader : MonoBehaviour
 
     private void Update()
     {
+        if (stopUpdate) return;
         if (done)
         {
-            
+            if (FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length <= 0)
+            {
+                StartWave(true);
+                stopUpdate = true;
+            }
         }
         else
         {
@@ -53,7 +61,7 @@ public class WaveLoader : MonoBehaviour
                     StartWave();
                 }
             }
-            if (clock > waves[waveIndex].duration)
+            if (waveIndex < waves.Count && clock > waves[waveIndex].duration)
             {
                 Debug.Log("wave over");
                 StopAllCoroutines();
@@ -72,7 +80,7 @@ public class WaveLoader : MonoBehaviour
         }
     }
 
-    private void StartWave()
+    private void StartWave(bool isBoss=false)
     {
         if (firstDone)
         {
@@ -83,29 +91,29 @@ public class WaveLoader : MonoBehaviour
         {
             firstDone = true;
         }
-        Debug.Log("startwave");
         startWave = false;
+        if (isBoss)
+        {
+            firstBossAttack.SetActive(true);
+            return;
+        }
         if (waves[waveIndex].topEnemies.Count > 0)
         {
-            Debug.Log("startwave1");
             StartCoroutine(SpawnsFromList(waves[waveIndex].topEnemies, topSpawns, waves[waveIndex].topPeriod, PosToInd.Top, waves[waveIndex].topOffset));
         }
         if (waves[waveIndex].bottomEnemies.Count > 0)
         {
-            Debug.Log("startwave2");
-            StartCoroutine(SpawnsFromList(waves[waveIndex].bottomEnemies, bottomSpawns, waves[waveIndex].bottomPeriod, PosToInd.Top, waves[waveIndex].bottomOffset));
+            StartCoroutine(SpawnsFromList(waves[waveIndex].bottomEnemies, bottomSpawns, waves[waveIndex].bottomPeriod, PosToInd.Bottom, waves[waveIndex].bottomOffset));
         }
         if (waves[waveIndex].sideEnemies.Count > 0)
         {
-            Debug.Log("startwave3");
-            StartCoroutine(SpawnsFromList(waves[waveIndex].sideEnemies, sideSpawns, waves[waveIndex].sidePeriod, PosToInd.Top, waves[waveIndex].sideOffset));
+            StartCoroutine(SpawnsFromList(waves[waveIndex].sideEnemies, sideSpawns, waves[waveIndex].sidePeriod, PosToInd.Side, waves[waveIndex].sideOffset));
         }
     }
 
     private IEnumerator SpawnsFromList(List<GameObject> enemyList, List<Transform> tList, float period, PosToInd position, float offset=0f)
     {
         yield return new WaitForSeconds(offset);
-        Debug.Log("shpawn");
         Instantiate(enemyList[spInd[(int)position] % enemyList.Count], tList[spInd[(int)position] % tList.Count].transform.position, Quaternion.identity);
         spInd[(int)position]++;
         yield return new WaitForSeconds(period);
