@@ -19,7 +19,8 @@ public class Bullet : MonoBehaviour
         Enemy e = collision.gameObject.GetComponent<Enemy>();
         if (e != null)
         {
-            e.Damage();
+            e.Damage(FindAnyObjectByType<Gun>().GetDamage());
+            Destroy(gameObject);
         }
     }
 }

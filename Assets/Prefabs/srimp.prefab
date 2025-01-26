@@ -165,8 +165,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6198071791003905423}
   m_Father: {fileID: 0}
@@ -215,7 +215,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 8397855877437363391, guid: c57b958289bcddd40a52abac2e7be969, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -240,4 +240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 302108797668790701}
   bulletPrefab: {fileID: 2905285424022872522, guid: a510e0926e275e7499c4e411b6292cda, type: 3}
-  bulletSpeed: 3
+  bulletSpeed: 10
+  sprite: {fileID: 1171190518873602761}
+  reloadTime: 1
+  rage: {fileID: 0}
+  bulletMeterTransform: {fileID: 0}
+  winUI: {fileID: 0}

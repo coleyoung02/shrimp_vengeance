@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209298610838089304}
   - component: {fileID: 751773381749573012}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,9 +76,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -6541868312297840152, guid: 7cd015d44edec7246a13bf92d74b26f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 5131406528228562109}
   - component: {fileID: 3010185698798272987}
   - component: {fileID: 8908875479358371957}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,8 +117,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 209298610838089304}
   m_Father: {fileID: 0}
@@ -135,7 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e06d02ab8469d44f9b3f823630fef87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
+  maxHealth: 3
+  spriteRenderer: {fileID: 751773381749573012}
 --- !u!114 &5131406528228562109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,9 +149,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab69d2a7a51c1db469d2c32648d636fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.8
   enemy: {fileID: 189680382200650362}
   rb: {fileID: 8908875479358371957}
+  overrideFlip: 0
+  overrideRotate: 0
+  overrideRotateFlip: 0
 --- !u!61 &3010185698798272987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -185,7 +189,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005456567, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -195,7 +199,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.3725033, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &8908875479358371957
 Rigidbody2D:
@@ -212,7 +216,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
