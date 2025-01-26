@@ -6596,29 +6596,9 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 768225488154600611, guid: 5585c7d22bd389f4c922fa4b783c6aef, type: 3}
-      propertyPath: gunshotSound.Path
-      value: event:/shootyshoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 768225488154600611, guid: 5585c7d22bd389f4c922fa4b783c6aef, type: 3}
       propertyPath: bulletMeterTransform
       value: 
       objectReference: {fileID: 1550040895}
-    - target: {fileID: 768225488154600611, guid: 5585c7d22bd389f4c922fa4b783c6aef, type: 3}
-      propertyPath: gunshotSound.Guid.Data1
-      value: 1916075711
-      objectReference: {fileID: 0}
-    - target: {fileID: 768225488154600611, guid: 5585c7d22bd389f4c922fa4b783c6aef, type: 3}
-      propertyPath: gunshotSound.Guid.Data2
-      value: 1074784049
-      objectReference: {fileID: 0}
-    - target: {fileID: 768225488154600611, guid: 5585c7d22bd389f4c922fa4b783c6aef, type: 3}
-      propertyPath: gunshotSound.Guid.Data3
-      value: -340842577
-      objectReference: {fileID: 0}
-    - target: {fileID: 768225488154600611, guid: 5585c7d22bd389f4c922fa4b783c6aef, type: 3}
-      propertyPath: gunshotSound.Guid.Data4
-      value: -1627829482
-      objectReference: {fileID: 0}
     - target: {fileID: 1332271348205616115, guid: 5585c7d22bd389f4c922fa4b783c6aef, type: 3}
       propertyPath: hearts.Array.size
       value: 3
