@@ -33,6 +33,7 @@ public class RageBubble : MonoBehaviour
             slider.value = rage;
             if (rage <= 0)
             {
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("chaosmode", 0);
                 Debug.Log("unraging");
                 gun.SetRageDone();
                 rageInUse = false;
@@ -51,6 +52,7 @@ public class RageBubble : MonoBehaviour
 
     public void StartRageInUse()
     {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("chaosmode", 1);
         Debug.Log("raging");
         rageInUse = true;
         rage = slider.maxValue;
