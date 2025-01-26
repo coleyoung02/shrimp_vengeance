@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
         
     }
 
-    public void Damage(float damage=1f)
+    public virtual void Damage(float damage=1f)
     {
         currentHealth -= damage;
         StopAllCoroutines();
@@ -42,7 +42,6 @@ public class Enemy : MonoBehaviour
         Color c = Color.white;
         for (float f = 0f; f < flashDuration; f += Time.deltaTime)
         {
-            Debug.Log("Ahhhh");
             c.g = Mathf.Lerp(1 - redness, 1, f / flashDuration);
             c.b = Mathf.Lerp(1 - redness, 1, f / flashDuration);
             spriteRenderer.color = c;

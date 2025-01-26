@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class PlayerHealth : MonoBehaviour
         if (e != null)
         {
             currentHealth--;
+            if (currentHealth <= 0)
+            {
+                SceneManager.LoadScene("LoseScene");
+            }
             for (int i = 0; i < hearts.Count; i++)
             {
                 if (i + 1 > currentHealth)
@@ -26,7 +31,18 @@ public class PlayerHealth : MonoBehaviour
                     hearts[i].SetActive(false);
                 }
             }
-            Destroy(e.gameObject, .25f);
+            if (!(e is BossTarget))
+            {
+                Destroy(e.gameObject, .25f);
+            }
+        }
+        else if (collision.gameObject.tag.Equals("kill"))
+        {
+            SceneManager.LoadScene("LoseScene");
+        }
+        else
+        {
+            Debug.Log("non event collision " + collision.gameObject.tag);
         }
     }
 }

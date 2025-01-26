@@ -90,13 +90,13 @@ public class Gun : MonoBehaviour
 
     public void RateBoost()
     {
-        fireRateMult *= Mathf.Pow(1.5f, .5f);
+        fireRateMult *= 1.5f;
         HideWinUI();
     }
 
     public void SizeBoost()
     {
-        rage.gameObject.transform.localScale *= 1.5f;
+        rage.gameObject.transform.localScale *= Mathf.Pow(1.3f, .5f);
         HideWinUI();
     }
 
