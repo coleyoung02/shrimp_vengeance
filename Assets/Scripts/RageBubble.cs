@@ -9,6 +9,7 @@ public class RageBubble : MonoBehaviour
     [SerializeField] private Gun gun;
     [SerializeField] private float rageIncreaseRate;
     [SerializeField] private float rageDecreaseRate;
+    private string eventPath = "event:/sickomode";
 
     private float rage;
     private bool rageInUse;
@@ -61,6 +62,7 @@ public class RageBubble : MonoBehaviour
     public void StartRageInUse()
     {
         canGetRage = false;
+        FMODUnity.RuntimeManager.PlayOneShot(eventPath);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("chaosmode", 1);
         Debug.Log("raging");
         rageInUse = true;
