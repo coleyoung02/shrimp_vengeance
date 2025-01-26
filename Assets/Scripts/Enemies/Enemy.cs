@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    private string eventPath = "event:/enemydeath";
 
     private float currentHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,6 +27,7 @@ public class Enemy : MonoBehaviour
         StartCoroutine(HurtEffect());
         if (currentHealth <= 0)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(eventPath);
             Destroy(gameObject);
         }
     }
