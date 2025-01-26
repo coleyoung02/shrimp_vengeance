@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    [SerializeField] FMODUnity.EventReference gunshotSound;
     [SerializeField] private Camera cam;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletSpeed;
@@ -121,7 +122,7 @@ public class Gun : MonoBehaviour
 
     private void Shoot()
     {
-
+        FMODUnity.RuntimeManager.PlayOneShot(gunshotSound);
         Vector2 aimAt = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 normAim = (aimAt - (Vector2)transform.position).normalized;
         Bullet b = Instantiate(bulletPrefab, transform.position, 
