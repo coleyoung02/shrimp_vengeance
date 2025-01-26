@@ -124,7 +124,8 @@ public class Gun : MonoBehaviour
 
         Vector2 aimAt = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 normAim = (aimAt - (Vector2)transform.position).normalized;
-        Bullet b = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
+        Bullet b = Instantiate(bulletPrefab, transform.position, 
+            Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(aimAt.y, aimAt.x) * Mathf.Rad2Deg))).GetComponent<Bullet>();
         b.StartMoving(normAim * bulletSpeed * bulletVelocityMultiplier);
         reloadClock = 0f;
         foreach (Transform t in bulletMeterTransform)

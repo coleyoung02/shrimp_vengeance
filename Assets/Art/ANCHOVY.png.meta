@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ANCHOVY_0: 4972057890352777581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

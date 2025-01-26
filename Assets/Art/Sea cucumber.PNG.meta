@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sea cucumber_0: 6834320162264601423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

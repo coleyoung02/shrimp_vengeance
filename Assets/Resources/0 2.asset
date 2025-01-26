@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 0 2
   m_EditorClassIdentifier: 
   sideEnemies:
-  - {fileID: 8624449763352923408, guid: 855caa110a044524996bc9c497d02b42, type: 3}
-  sidePeriod: 1
-  sideOffset: 2
+  - {fileID: 8624449763352923408, guid: 1addb92fba5b5b64780ad925231f9a01, type: 3}
+  - {fileID: 8624449763352923408, guid: e32067609816f2e45bbd5996d9e86681, type: 3}
+  sidePeriod: 4
+  sideOffset: 1
   topEnemies: []
   topPeriod: 0
   topOffset: 0
-  bottomEnemies: []
-  bottomPeriod: 0
-  bottomOffset: 0
-  duration: 12
+  bottomEnemies:
+  - {fileID: 8624449763352923408, guid: 3a4848c0f8cc1134ab72d034d7d7f9e6, type: 3}
+  bottomPeriod: 4
+  bottomOffset: 2
+  duration: 30

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bdd653d576d26ee43a040c3be5a497de
+guid: 74c87b4effcb5cf4cbd5efc616e227e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7719180373632065877
-    second: sandworm_0
+      213: 2304256067080036435
+    second: bgFaint_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sandworm_0
+      name: bgFaint_0
       rect:
         serializedVersion: 2
-        x: 146
-        y: 0
-        width: 229
-        height: 809
+        x: 0
+        y: 48
+        width: 256
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 551a18fd6a9002b60800000000000000
-      internalID: 7719180373632065877
+      spriteID: 35028dd3fac5aff10800000000000000
+      internalID: 2304256067080036435
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      sandworm_0: 7719180373632065877
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

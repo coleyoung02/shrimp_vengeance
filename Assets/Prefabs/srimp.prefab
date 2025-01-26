@@ -148,6 +148,8 @@ GameObject:
   - component: {fileID: 2940690257978123408}
   - component: {fileID: 1171190518873602761}
   - component: {fileID: 768225488154600611}
+  - component: {fileID: 1705208446998314237}
+  - component: {fileID: 1332271348205616115}
   m_Layer: 3
   m_Name: srimp
   m_TagString: Untagged
@@ -246,3 +248,53 @@ MonoBehaviour:
   rage: {fileID: 0}
   bulletMeterTransform: {fileID: 0}
   winUI: {fileID: 0}
+--- !u!58 &1705208446998314237
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186813435465112129}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.75
+--- !u!114 &1332271348205616115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186813435465112129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af41ea6faf74ab438bfc347280b14ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts: []
+  maxHealth: 3

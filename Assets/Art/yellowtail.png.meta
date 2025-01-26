@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      yellowtail_0: -9046198243737629688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
