@@ -51,7 +51,7 @@ public class Gun : MonoBehaviour
                 t.gameObject.SetActive(true);
             }
         }
-        if (Input.GetMouseButtonDown(0) || (Input.GetMouseButton(0) && bulletVelocityMultiplier > 1.01f))
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
         {
             if (reloadClock > reloadTime)
             {
