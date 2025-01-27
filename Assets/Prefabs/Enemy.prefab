@@ -97,9 +97,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5763451594699714512}
   - component: {fileID: 189680382200650362}
-  - component: {fileID: 5131406528228562109}
   - component: {fileID: 3010185698798272987}
   - component: {fileID: 8908875479358371957}
+  - component: {fileID: 5330752999073996929}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -137,24 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   spriteRenderer: {fileID: 751773381749573012}
---- !u!114 &5131406528228562109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8624449763352923408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab69d2a7a51c1db469d2c32648d636fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0.8
-  enemy: {fileID: 189680382200650362}
-  rb: {fileID: 8908875479358371957}
-  overrideFlip: 0
-  overrideRotate: 0
-  overrideRotateFlip: 0
 --- !u!61 &3010185698798272987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -228,3 +210,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5330752999073996929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8624449763352923408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1fbdf5c302fb144baaeaad9c568715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.8
+  enemy: {fileID: 189680382200650362}
+  rb: {fileID: 8908875479358371957}
+  overrideFlip: 0
+  overrideRotate: 0
+  overrideRotateFlip: 0
+  squiggleAngle: 7.5
+  squiggleFrequency: 1

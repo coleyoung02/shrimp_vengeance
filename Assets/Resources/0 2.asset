@@ -17,9 +17,10 @@ MonoBehaviour:
   - {fileID: 8624449763352923408, guid: e32067609816f2e45bbd5996d9e86681, type: 3}
   sidePeriod: 4
   sideOffset: 1
-  topEnemies: []
-  topPeriod: 0
-  topOffset: 0
+  topEnemies:
+  - {fileID: 8624449763352923408, guid: 7bb06debcafba4d4991df935b7995bce, type: 3}
+  topPeriod: 6
+  topOffset: 7
   bottomEnemies:
   - {fileID: 8624449763352923408, guid: 3a4848c0f8cc1134ab72d034d7d7f9e6, type: 3}
   bottomPeriod: 4

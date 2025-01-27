@@ -222,7 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48efb989c7bfb1f458a5f0bf100f806c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 2.625
   enemy: {fileID: 189680382200650362}
   rb: {fileID: 8908875479358371957}
+  overrideFlip: 0
+  overrideRotate: 0
+  overrideRotateFlip: 0
   attackAngle: 75

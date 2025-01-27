@@ -117,7 +117,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 209298610838089304}
@@ -222,11 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68a58eb25997e74186064f203281510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.8
   enemy: {fileID: 189680382200650362}
   rb: {fileID: 8908875479358371957}
   overrideFlip: 0
   overrideRotate: 0
   overrideRotateFlip: 0
-  dashLength: 1
-  pauseLength: 0.2
+  dashLength: 1.5
+  pauseLength: 0.05
+  dashAngle: 35

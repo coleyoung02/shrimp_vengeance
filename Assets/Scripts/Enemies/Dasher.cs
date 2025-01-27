@@ -5,6 +5,7 @@ public class Dasher : EnemyMovement
 {
     [SerializeField] private float dashLength;
     [SerializeField] private float pauseLength;
+    [SerializeField] private float dashAngle = 35f;
     private float angleMult = 1;
     private float speedMult = 1;
 
@@ -21,7 +22,7 @@ public class Dasher : EnemyMovement
         {
             rb.linearVelocity = (straight).normalized * moveSpeed * speedMult;
         }
-        rb.linearVelocity = ((Vector2)(Quaternion.Euler(new Vector3(0, 0, 35 * angleMult)) * straight)).normalized * moveSpeed * speedMult;
+        rb.linearVelocity = ((Vector2)(Quaternion.Euler(new Vector3(0, 0, dashAngle * angleMult)) * straight)).normalized * moveSpeed * speedMult;
     }
 
     private IEnumerator DashAdjust()
@@ -30,24 +31,24 @@ public class Dasher : EnemyMovement
         {
             for (float f = 0; f < dashLength; f += Time.deltaTime)
             {
-                speedMult = 1.2f - Mathf.Pow(2 * f / dashLength - 1f, 2f);
+                speedMult = 1.15f - Mathf.Pow(2 * f / dashLength - 1f, 2f);
                 yield return new WaitForEndOfFrame();
             }
-            speedMult = .2f;
+            speedMult = .15f;
             if (angleMult < 0)
             {
-                for (float f = 0; f < .4f; f += Time.deltaTime)
+                for (float f = 0; f < .2f; f += Time.deltaTime)
                 {
-                    angleMult = f * 10 / 2f - 1;
+                    angleMult = f * 10 - 1;
                     yield return new WaitForEndOfFrame();
                 }
                 angleMult = 1;
             }
             else
             {
-                for (float f = 0; f < .4f; f += Time.deltaTime)
+                for (float f = 0; f < .2f; f += Time.deltaTime)
                 {
-                    angleMult = -f * 10 / 2f + 1;
+                    angleMult = -f * 10 + 1;
                     yield return new WaitForEndOfFrame();
                 }
                 angleMult = -1;
