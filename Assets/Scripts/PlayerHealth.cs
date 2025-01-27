@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private List<GameObject> hearts;
     [SerializeField] private int maxHealth;
+    private string eventPath = "event:/playerdamaged";
 
     private int currentHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Enemy e = collision.gameObject.GetComponent<Enemy>();
+        FMODUnity.RuntimeManager.PlayOneShot(eventPath);
         if (e != null)
         {
             currentHealth--;
