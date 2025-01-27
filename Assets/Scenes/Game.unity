@@ -2866,6 +2866,7 @@ GameObject:
   - component: {fileID: 1297321323}
   - component: {fileID: 1297321322}
   - component: {fileID: 1297321321}
+  - component: {fileID: 1297321324}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -2949,6 +2950,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1297321324}
+        m_TargetAssemblyTypeName: AudioButton, Assembly-CSharp
+        m_MethodName: playSoundClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1297321322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2987,6 +3000,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297321319}
   m_CullTransparentMesh: 1
+--- !u!114 &1297321324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297321319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2429c4b9052c594a88b4b688493741b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSFX:
+    Guid:
+      Data1: 1675574550
+      Data2: 1261572929
+      Data3: -1622548095
+      Data4: -164849532
+    Path: event:/sickomode
 --- !u!1 &1298965498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4228,6 +4260,7 @@ GameObject:
   - component: {fileID: 1705117580}
   - component: {fileID: 1705117579}
   - component: {fileID: 1705117578}
+  - component: {fileID: 1705117581}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4311,6 +4344,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1705117581}
+        m_TargetAssemblyTypeName: AudioButton, Assembly-CSharp
+        m_MethodName: playSoundClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1705117579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4349,6 +4394,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705117576}
   m_CullTransparentMesh: 1
+--- !u!114 &1705117581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705117576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2429c4b9052c594a88b4b688493741b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSFX:
+    Guid:
+      Data1: 1675574550
+      Data2: 1261572929
+      Data3: -1622548095
+      Data4: -164849532
+    Path: event:/sickomode
 --- !u!1 &1706674397
 GameObject:
   m_ObjectHideFlags: 0
@@ -6119,6 +6183,7 @@ GameObject:
   - component: {fileID: 2064210749}
   - component: {fileID: 2064210748}
   - component: {fileID: 2064210747}
+  - component: {fileID: 2064210750}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -6202,6 +6267,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2064210750}
+        m_TargetAssemblyTypeName: AudioButton, Assembly-CSharp
+        m_MethodName: playSoundClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2064210748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6240,6 +6317,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064210745}
   m_CullTransparentMesh: 1
+--- !u!114 &2064210750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064210745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2429c4b9052c594a88b4b688493741b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSFX:
+    Guid:
+      Data1: 1675574550
+      Data2: 1261572929
+      Data3: -1622548095
+      Data4: -164849532
+    Path: event:/sickomode
 --- !u!1 &2098558740
 GameObject:
   m_ObjectHideFlags: 0
