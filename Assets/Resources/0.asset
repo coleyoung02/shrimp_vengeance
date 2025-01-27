@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   sideEnemies:
+  - {fileID: 8624449763352923408, guid: c8bd8fc2d8cc8704b857d52789920584, type: 3}
   - {fileID: 8624449763352923408, guid: 855caa110a044524996bc9c497d02b42, type: 3}
   - {fileID: 8624449763352923408, guid: c8bd8fc2d8cc8704b857d52789920584, type: 3}
   sidePeriod: 3
@@ -24,6 +25,6 @@ MonoBehaviour:
   topOffset: 1
   bottomEnemies:
   - {fileID: 8624449763352923408, guid: 88d6f3e280fe2254ca8b4a545f807351, type: 3}
-  bottomPeriod: 5
+  bottomPeriod: 6
   bottomOffset: 0
   duration: 30

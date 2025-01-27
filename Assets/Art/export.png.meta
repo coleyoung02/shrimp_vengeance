@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 253db26ad4e1843448ec58426d84a71b
+guid: 98bcf24801029194ab7b22b8a83300ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3305041056698689392
-    second: shrimp_dieded_0
+      213: 4455655206081075757
+    second: export_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shrimp_dieded_0
+      name: export_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 15
         y: 0
-        width: 3040
-        height: 2160
+        width: 220
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0776b98845ddddd20800000000000000
-      internalID: 3305041056698689392
+      spriteID: d2a15188dcaa5dd30800000000000000
+      internalID: 4455655206081075757
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shrimp_dieded_0: 3305041056698689392
+      export_0: 4455655206081075757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

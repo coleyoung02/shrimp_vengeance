@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 253db26ad4e1843448ec58426d84a71b
+guid: 6cbfdfdecc556fc4985fa710e44868ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3305041056698689392
-    second: shrimp_dieded_0
+      213: -5096913445465546189
+    second: scrimp_win_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shrimp_dieded_0
+      name: scrimp_win_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0776b98845ddddd20800000000000000
-      internalID: 3305041056698689392
+      spriteID: 3322d18d9302449b0800000000000000
+      internalID: -5096913445465546189
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      shrimp_dieded_0: 3305041056698689392
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
