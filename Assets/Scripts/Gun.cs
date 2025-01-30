@@ -13,6 +13,7 @@ public class Gun : MonoBehaviour
 
     [SerializeField] private RectTransform bulletMeterTransform;
     [SerializeField] private GameObject winUI;
+    [SerializeField] private GameObject rageButton;
 
     private float reloadClock;
 
@@ -71,6 +72,14 @@ public class Gun : MonoBehaviour
         }
     }
 
+    public void TryEnterRage()
+    {
+        if (rageReady)
+        {
+            StartRageInUse();
+        }
+    }
+
     private void HideWinUI()
     {
         Time.timeScale = 1;
@@ -103,12 +112,14 @@ public class Gun : MonoBehaviour
     public void SetRageReady()
     {
         rageReady = true;
+        rageButton.gameObject.SetActive(true);
     }
 
     private void StartRageInUse()
     {
         Debug.Log("go");
         rageReady = false;
+        rageButton.gameObject.SetActive(false);
         rage.StartRageInUse();
         reloadRate = 4;
         bulletVelocityMultiplier = 2;
